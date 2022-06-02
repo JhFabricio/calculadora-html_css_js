@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/104f7fa498.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/index.js" defer></script>
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <main class="container" id="container">
+       <div class="content" id="content">
+           <div class="display" id="display">
+               <span class="content-result" id="result"></span>
+           </div>
+             
+           <div class="content-button">
+               <div class="content-keys">
+                    <button type="button" onclick="contentClean()">CE</button>
+                     <button type="button" onclick="insert('/')"><i class="fa-solid fa-divide"></i></button>
+                       <button type="button" onclick="backSpace()" style="width:110px;"><i class="fa-solid fa-delete-left"></i></button>  
+               </div>
 
+               <div class="content-keys">
+                   <button type="button"  onclick="insert('7')">7</button>
+                    <button type="button" onclick="insert('8')">8</button>
+                     <button type="button" onclick="insert('9')">9</button>
+                      <button type="button" onclick="insert('*')">X</button>
+               </div>
+
+               <div class="content-keys">
+                   <button type="button" onclick="insert('4')">4</button>
+                    <button type="button" onclick="insert('5')">5</button>
+                     <button type="button" onclick="insert('6')">6</button>
+                      <button type="button" onclick="insert('-')">-</button>
+               </div>
+
+               <div class="content-keys">
+                   <button type="button" onclick="insert('1')">1</button>
+                    <button type="button" onclick="insert('2')">2</button>
+                     <button type="button" onclick="insert('3')">3</button>
+                      <button type="button" onclick="insert('+')">+</button>
+               </div>
+
+               <div class="content-keys">
+                    <button type="button" onclick="insert('0')">0</button>
+                     <button type="button" onclick="insert('.')">.</button>
+                      <button type="button" onclick="confirm()" class="btn-confirm" style="width:110px;">=</button>
+               </div>
+                   
+           </div>
+       </div>
+   </main>
+  </body>
+</html>
